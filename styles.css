@@ -1,0 +1,256 @@
+/* General Box Shadow for Webpage */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.5);
+    padding: 10px;
+}
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0d6efd; /* Bright blue background */
+    color: white; /* White text color for contrast */
+    box-shadow: 0 8px 15px rgba(0, 0, 255, 0.5);
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    height: 60vh;
+}
+
+/* Animated Men Image (Left Corner) */
+.animated-men-left {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    z-index: 999;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#about {
+    background-color: #f1f3f5; /* Light grey background */
+    color: #343a40; /* Dark text for readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.5);
+    padding: 40px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: #f1f3f5; /* Light grey background */
+    color: #343a40; /* Dark text for readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.5);
+}
+.skill-box {
+    width: 250px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 3px solid #0d6efd; /* Thicker border with color */
+    border-radius: 8px;
+    opacity: 0; /* Initially hide the skill */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply fadeIn animation */
+}
+
+/* Animation to show skills one by one */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-box:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.skill-box:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.skill-box:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.skill-box:nth-child(4) {
+    animation-delay: 5s;
+}
+
+.skill-box:nth-child(5) {
+    animation-delay: 7s;
+}
+
+.skill-box:nth-child(6) {
+    animation-delay: 6s;
+}
+
+.skill-box:nth-child(7) {
+    animation-delay: 8s;
+}
+
+.skill-box:nth-child(8) {
+    animation-delay: 10s;
+}
+
+.skill-box:nth-child(9) {
+    animation-delay: 9s;
+}
+
+/* Scrollable Projects */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    justify-content: center; /* Center the projects horizontally */
+}
+
+.project {
+    background-color: #f1f3f5; /* Light grey background */
+    color: #343a40; /* Dark text for readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.5);
+    padding: 40px;
+    border-radius: 8px;
+    flex: 0 0 auto;
+    margin: 0 20px; /* Increase margin between projects */
+    width: 300px;
+    opacity: 0; /* Initially hide the project */
+    animation: slideIn 1.5s ease-in-out forwards; /* Increased slide time */
+}
+
+.project:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.project:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.project:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.project:nth-child(4) {
+    animation-delay: 8s;
+}
+
+.project:nth-child(5) {
+    animation-delay: 1s;
+}
+
+/* Slide-in effect */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-150%); /* Increased slide distance */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#certifications {
+    background-color: #f1f3f5; /* Light grey background */
+    color: #343a40; /* Dark text for readability */
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.5); /* Shadow for content */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Other Sections */
+section {
+     margin: 50px 0;
+}
+
+.text-primary {
+    color: #0d6efd !important;
+}
+
+/* Project Image styling */
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.5);
+}
+
+/* Modal Custom Styles (Optional) */
+.modal-dialog {
+    max-width: 600px; /* Optional: Restrict modal width */
+    margin: 30px auto; /* Center modal on the screen */
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 2px solid black; /* Black outline */
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing for better user experience */
+}
+
+button[type="submit"] {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0a58ca;
+}
+
+.cursor {
+    display: inline-block;
+    width: 5px;
+    background-color: black;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* Default Light Mode */
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #212529;
+    color: #f8f9fa;
+}
